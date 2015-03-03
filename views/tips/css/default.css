@@ -1,0 +1,37 @@
+ul{
+	padding-left:16px;
+}
+ul > li{	
+	line-height:24px;	
+	margin-bottom:12px;
+}
+.top p, .top ul > li{
+	font-size:0.8em;		
+}
+.tips > div{
+	display:inline-block;display:table-cell; /*Remove the invisible space*/"
+}
+hr {
+	margin:40px 0 25px 0;
+	border: 0;
+	height: 1px;
+	background: #C9C9C9; 
+}
+.ex_container{
+	padding:20px 20px 24px 20px;
+	background-color:#fff;
+	margin-top:25px;
+	border:1px solid #DFDFDF;
+}
+.ex{
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+	margin-top:20px;
+}
+.ex tr td{
+	text-align:center;
+}
+.ex tr td img{
+	border:8px solid #DFDFDF;
+}

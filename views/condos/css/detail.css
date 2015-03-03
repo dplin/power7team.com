@@ -1,0 +1,10 @@
+.pure-u-1-4 {
+	text-align:right;	
+	width:278px;
+}
+.pure-u-1-4 label{
+	float:left;
+	display:block;
+	width:120px;
+	margin-right:5px;
+}

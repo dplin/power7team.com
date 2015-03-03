@@ -1,0 +1,13 @@
+.top{
+	margin-top:35px;
+	font-size:0.8em;
+}
+.top > div{
+	display:inline-block;display:table-cell; /*Remove the invisible space*/"
+}
+hr {
+	margin:40px 0 25px 0;
+	border: 0;
+	height: 1px;
+	background: #C9C9C9; 
+}

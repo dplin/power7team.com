@@ -1,0 +1,39 @@
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+.agent{
+	font-size:0.8em;
+}
+.agent p{
+	margin:10px 0;
+}
+.agent p:nth-child(2){
+	margin-top:3px;
+	font-style:italic;
+}
+.agent h2{
+	margin:0;
+}
+.image_wrapper{
+	border:8px solid #DFDFDF;
+	width:147px;	
+	float:left;
+}
+.image_wrapper img{
+	display:block;
+}
+.agent_description{
+	float:left;
+	width:677px;
+	padding-left:60px;
+}
+hr {
+	margin:25px 0 25px 0;
+	border: 0;
+	height: 1px;
+	background: #C9C9C9; 
+}

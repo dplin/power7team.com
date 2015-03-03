@@ -1,0 +1,49 @@
+# Disable directory browsing
+Options -Indexes +FollowSymlinks
+
+# Allow All Images/CSS/JS
+<FilesMatch "\.(png|jpe?g|gif|css|js|style)$">
+  Satisfy Any
+  Allow from all
+</FilesMatch>
+
+# Protect .htaccess and .htpasswd files
+<FilesMatch "^\.ht">
+order allow,deny
+deny from all
+</FilesMatch> 
+
+# Protect config.* files
+<FilesMatch "^config(\..*)?$">
+  Order deny,allow
+  Deny from all
+</FilesMatch>
+
+# Protect files depending on extension
+<FilesMatch "^(.*)\.(inc|inc\.php|tpl|tpl\.php|sql|txt|dat|csv|exe|dll)$">
+  Order deny,allow
+  Deny from all
+</FilesMatch>
+
+RewriteEngine On
+
+RewriteRule ^thumb/([^/]+) views/admin/server/files/thumbnail/$1 [NC]
+
+RewriteRule ^photo/([^/]+) views/admin/server/files/$1 [NC]
+
+RewriteRule ^files/([^/]+) views/admin/server/files/$1 [NC]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !download.php$
+RewriteCond %{REQUEST_FILENAME} !upload.php$
+RewriteCond %{REQUEST_FILENAME} !phpThumb.php$
+
+
+# RewriteCond %{REQUEST_URI} !^/public/css [NC]
+# RewriteCond %{REQUEST_URI} !^/public/images [NC]
+# RewriteCond %{REQUEST_URI} !^/public/js [NC]
+# RewriteCond %{REQUEST_URI} !^/server [NC]
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]

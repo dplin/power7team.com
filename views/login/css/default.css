@@ -1,0 +1,16 @@
+input{
+	margin-bottom:10px;
+	width:230px;
+}
+.pure-form div{
+	margin-top:10px;
+}
+.forgot_pass{
+	font-size:0.8em;
+}
+.forgot_pass a{
+	color:#000;
+}
+.icon-long-arrow-right{
+	margin-left:5px;
+}

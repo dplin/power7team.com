@@ -1,0 +1,62 @@
+ul li{
+	margin:15px 0;
+}
+#faq_container i{
+	color:#3B3B3B;
+	font-size:2.5em;
+	margin-right:20px;
+}
+.top > div{
+	display:inline-block;display:table-cell; /*Remove the invisible space*/"
+}
+#faq_container{		
+	width:490px;
+	background-color:#f5f5f5;
+	font-size:0.8em;
+	line-height:22px;
+	margin-top:30px;	
+}
+#faq_container p{
+	margin:0;
+}
+#faq_container a{
+	color:#00CBD2;
+}
+.widget{
+	background-color:#fff;
+	width:662px;
+	border:1px solid #DFDFDF;		
+}
+.widget_content{
+	padding:15px;
+}
+
+.accordionButton {	
+	width: 460px;
+	float: left;
+	padding:6px 0 6px 30px;
+	cursor: pointer;		
+	border-bottom:1px solid #C9C9C9;	
+}
+.accordionButton span{
+	font-weight:bold;
+	position:relative;
+	bottom:6px;
+}
+.accordionContent {	
+	width: 412px;
+	float: left;
+	padding-bottom:10px;
+	padding-left:48px;
+	line-height:20px;
+	display: none;	
+}
+.accordionContent ul{
+	font-size:0.8em;	
+}	
+.on span{
+	color: #222;
+}
+.on i{
+	color: #666;
+}

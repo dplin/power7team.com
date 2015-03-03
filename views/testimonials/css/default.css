@@ -1,0 +1,29 @@
+.top{
+	margin-top:35px;
+	font-size:0.8em;
+}
+.t_cont > div{
+	display:inline-block;display:table-cell; /*Remove the invisible space*/"
+}
+hr {
+	margin:20px 0;
+	border: 0;
+	height: 1px;
+	background: #C9C9C9; 
+}
+.testimonials{
+	background-color:#fff;
+	border:1px solid #DFDFDF;
+	padding:20px;
+	margin-bottom:20px;
+}
+.testimonials img{
+	border:1px solid #DFDFDF;	
+}
+.testimonials p{
+	margin-bottom:12px;
+	font-size:0.8em;
+}
+.testimonials p:last-child{
+	margin-bottom:0;
+}
